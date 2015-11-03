@@ -1,6 +1,7 @@
 import pylab
 from matplotlib import mlab
-
+# meanNormalizations    231991.91236,68843.7688878,64626.0316494 -1.09
+# futures scaling       164794.671843,115623.786246,127452.529832 -3.09
 
 def train(x, y, alpha):
     tetta = [50000, 50000, 50000]
@@ -73,7 +74,7 @@ def futureScaling(x):
     for elem in arr:
         maxValue.append(max(elem))
     i = 0
-    # change x array
+    # edit x array
     for item in x:
         j = 0
         for elem in item:
@@ -85,7 +86,7 @@ def futureScaling(x):
 
 def meanNormalization(x):
 
-    # find max and mean value of array
+    # find max, min (for standart deviatiob) and summ (for mean value) value in array
     summ = []
     max = []
     min = []
@@ -105,17 +106,17 @@ def meanNormalization(x):
                 min[i] = item
             i += 1
     mean = []
-    for s in summ:
-        mean.append(s/len(x))
+    # create array of mean values
+    for summ_i in summ:
+        mean.append(summ_i/len(x))
     s = []
     k = 0
+    # create array of standart deviation values
     for m in max:
         s.append(m - min[k])
         k += 1
-    print mean
-    print s
     j = 0
-    print x
+    # Edit x array
     for items in x:
         i = 0
         for item in items:

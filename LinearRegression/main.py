@@ -41,20 +41,24 @@ def startTrain():
     x = arr[0]
     y = arr[1]
     alfa = 0.0001
-    # meanNormalization(x)
     teta = train(x, y, alfa)
     saveData(teta)
 
 
-def startVisualisation():
-    x = [1, 30]
-    y = [get(x[0]), get(x[1])]
-    arr = getDataFromCSV()
-    otherX = arr[0]
-    otherY = arr[1]
-    visualizate(x, y, otherX, otherY)
+# def startVisualisation():
+#     x = [1, 30]
+#     y = [get(x[0]), get(x[1])]
+#     arr = getDataFromCSV()
+#     otherX = arr[0]
+#     otherY = arr[1]
+#     visualizate(x, y, otherX, otherY)
+
 
 
 startTrain()
+
+# mean normalization    303113
+# futures scaling       295592
+# true value -          399900
 # print (get(2104, 3))
 print ("Success")
