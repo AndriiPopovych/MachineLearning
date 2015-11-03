@@ -18,4 +18,4 @@ def getFileContents(fileName):
 
 def saveData(data, fileName = "teta.csv"):
 	fileData = open(fileName, 'w+')
-	fileData.write(str(data[0]) + "," + str(data[1]) + "," + str(data[1]))
+	fileData.write(str(data[0]) + "," + str(data[1]) + "," + str(data[2]))
