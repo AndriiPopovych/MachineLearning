@@ -1,15 +1,24 @@
 import pylab
-from matplotlib import mlab
-
-def visualizate(X = [], Y = [], otherX = [], otherY = []):
-	xlist = X # mlab.frange (xmin, xmax, dx)
-
-	ylist = Y
+from mpl_toolkits.mplot3d import Axes3D
+import numpy
 
 
-	pylab.plot (xlist, ylist)
-	i = 0
-	for point in otherX :
-		pylab.plot(point[1], otherY[i], "x")
-		i += 1
-	pylab.show()
+def makeData(x, y):
+    xgrid, ygrid = numpy.meshgrid(x, y)
+    zgrid = xgrid + ygrid/2 #numpy.sin(xgrid) * numpy.sin(ygrid) / (xgrid * ygrid)
+    return xgrid, ygrid, zgrid
+
+
+def vizializate(x, y, z):
+    x, y = numpy.meshgrid(x, y)
+    fig = pylab.figure()
+    axes = Axes3D(fig)
+    axes.plot_surface(x, y, z)
+    pylab.show()
+
+
+# a = range(1, 10)
+# b = range(96, 106)
+# c = range(1,10)
+# vizializate(a,b,c)
+# x, y, z = makeData()
