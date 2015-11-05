@@ -55,10 +55,10 @@ def startTrain():
 
 
 
-startTrain()
+#startTrain()
 
 # mean normalization    303113
 # futures scaling       295592
 # true value -          399900
-# print (get(2104, 3))
+print (get(1600, 3))
 print ("Success")

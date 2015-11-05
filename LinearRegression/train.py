@@ -1,10 +1,13 @@
 import pylab
 from matplotlib import mlab
+import random
 # meanNormalizations    231991.91236,68843.7688878,64626.0316494 -1.09
 # futures scaling       164794.671843,115623.786246,127452.529832 -3.09
+mseArr = []
 
 def train(x, y, alpha):
-    tetta = [50000, 50000, 50000]
+    #tetta = [50000, 50000, 50000]
+    tetta = initializationWeights(x)
     print ("start training...")
     #x = futureScaling(x)
     x = meanNormalization(x)
@@ -29,9 +32,9 @@ def train(x, y, alpha):
                 mse = alpha * summ / m  # minimum square error
                 i += 1
             newTetta[j] = tetta[j] - mse
-            if q == 1000:
+            if q == 10000:
                 print (counter)
-                pylab.plot(counter, mse, "x")
+                #pylab.plot(counter, mse, "x")
                 q = 0
             q += 1
             j += 1
@@ -41,18 +44,27 @@ def train(x, y, alpha):
             k = k + 1
 
         counter += 1
-        if counter > 10000:
+        if stopFunction(mse) == True:
             pylab.show()
             print ("mse:")
             print (mse)
             # print "End..."
             return tetta
 
+def stopFunction(mse):
+    mseArr.append(mse)
+    lenMse = len(mseArr)
+    if ( (mseArr[lenMse - 1] - mseArr[lenMse - 2]) < 0.00001 and lenMse > 2):
+        print mseArr
+        return True
+    return False
+
 
 def initializationWeights(x):
     tetta = []
+    lenX = float(len(x[0]))
     for item in x[0]:
-        tetta.append(1)
+        tetta.append(random.uniform(-1.0/lenX, 1.0/lenX))
     return tetta
 
 
