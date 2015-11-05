@@ -9,8 +9,10 @@ def makeData(x, y):
     return xgrid, ygrid, zgrid
 
 
-def vizializate(x, y, z):
+def visualization(x, y, z):
     x, y = numpy.meshgrid(x, y)
+    print x
+    print y
     fig = pylab.figure()
     axes = Axes3D(fig)
     axes.plot_surface(x, y, z)
