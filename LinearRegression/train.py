@@ -21,6 +21,7 @@ def train(x, y, alpha):
     q = 0
     while tmblr == 1:
         mse = 0
+        mse2 = 0
         j = 0
         while j < len(x[0]):
             i = 0
@@ -31,9 +32,12 @@ def train(x, y, alpha):
                 for num in tetta:
                     f += num * x[i][l]  # calculate summ h(x)
                     l += 1
+                mse2 += (f-y[i])*(f-y[i])
                 summ += (f - y[i]) * x[i][j]  # (h(x) - y(i))*x(i)(j)
                 mse = alpha * summ / m  # minimum square error
                 i += 1
+                q += 1
+            mse2 = mse2/(2*m)
             newTetta[j] = tetta[j] - mse
 
             j += 1
@@ -42,15 +46,15 @@ def train(x, y, alpha):
             tetta[k] = tet
             k = k + 1
         counter += 1
-        if q == 100:
+        if q > 10000:
             t1.append(tetta[0])
             t2.append(tetta[1])
             z.append(mse)
             print (counter)
             #pylab.plot(counter, mse, "x")
             q = 0
-        q += 1
         if stopFunction(mse) == True:
+            print t1
             visualization(t1, t2, z)
             # pylab.show()
             print ("mse:")
@@ -59,9 +63,7 @@ def train(x, y, alpha):
             return tetta
 
 def stopFunction(mse):
-    global counter
-    if counter > 100000:
-        return True
+    global mseArr
     mseArr.append(mse)
     lenMse = len(mseArr)
     if ( (mseArr[lenMse - 1] - mseArr[lenMse - 2]) < 0.00001 and lenMse > 2):

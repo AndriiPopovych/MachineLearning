@@ -1,5 +1,7 @@
 import pylab
 from mpl_toolkits.mplot3d import Axes3D
+from matplotlib.colors import LinearSegmentedColormap
+from matplotlib import cm
 import numpy
 
 
@@ -15,7 +17,7 @@ def visualization(x, y, z):
     print y
     fig = pylab.figure()
     axes = Axes3D(fig)
-    axes.plot_surface(x, y, z)
+    axes.plot_surface(x, y, z, rstride=4, cstride=4, cmap = cm.jet)
     pylab.show()
 
 

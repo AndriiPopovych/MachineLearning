@@ -5,7 +5,7 @@ def predict(_x, _x1):
     x = arr[0]
     i = 0
     result = []
-    # initialize array for saving values by numbers of fiches
+    # initialize array for saving values by numbers of fiches """ features* """
     arr = []
     for i in range(len(x[0])):
         arr.append([])
