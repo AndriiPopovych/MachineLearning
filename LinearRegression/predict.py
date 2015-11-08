@@ -1,32 +1,21 @@
 from fileSystem import *
+from train import meanNormalization
 
-def predict(_x, _x1):
-    arr = getDataFromCSV()
-    x = arr[0]
+def predict(_xArray):
+    tettaData = getFileContents("tetta.csv")
+    meanCoefficients = getFileJSONContents("meanCoefficients.json")
+    sDeviation = meanCoefficients[0]
+    meanValue = meanCoefficients[1]
+    tetta = tettaData.split(",")
+    xArray = [(1.0 - float(sDeviation[0])) / float(meanValue[0])]
+    i = 1
+    for x in _xArray:
+        xArray.append((float(x) - float(sDeviation[i])) / float(meanValue[i]))
+        i += 1
     i = 0
-    result = []
-    # initialize array for saving values by numbers of fiches """ features* """
-    arr = []
-    for i in range(len(x[0])):
-        arr.append([])
-    for item in x:
-        j = 0
-        for elem in item:
-            arr[j].append(elem)
-            j += 1
-    index = 0
-    maxValue = []
-    # find max value in each values by numbers of fitches
-    for elem in arr:
-        maxValue.append(max(elem))
-    _x = float(_x) / float(maxValue[1])
-    _x1 = float(_x1) / float(maxValue[2])
+    summ = 0
+    for t in tetta:
+        summ += xArray[i] * float(t)
+        i += 1
+    return summ
 
-    arr = getFileContents("teta.csv").split(",")
-    tetta = [0, 0, 0]
-    tetta[0] = float(arr[0])
-    tetta[1] = float(arr[1])
-    tetta[2] = float(arr[2])
-    print (tetta)
-    result = tetta[0] + tetta[1] * _x + tetta[2] * _x1
-    return result

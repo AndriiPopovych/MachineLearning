@@ -1,23 +1,50 @@
-def getDataFromCSV(fileName="../Datasets/multiple_linear_regression.csv"):
+import json
+
+
+def getDataFromCSV(fileName="../../Datasets/multiple_linear_regression.csv"):
     fileContent = getFileContents(fileName).split("\n")
     x = []
     y = []
     i = 0
     for row in fileContent:
         arr = row.split(',')
-        x.append([1, int(arr[0]), int(arr[1])])
-        y.append(float(arr[2]))
-        i = i + 1
-    result = [x, y]
-    return result
+        lenArr = len(arr)
+        j = 0
+        xRow = [1]
+        for item in arr:
+            if j != lenArr - 1:
+                xRow.append(int(item))
+            else:
+                y.append(int(item))
+            j += 1
+        x.append(xRow)
+        i += 1
+    return x, y
 
 
 def getFileContents(fileName):
-    fileDataSet = open(fileName);
+    fileDataSet = open(fileName)
     fileContent = fileDataSet.read()
     return fileContent
 
 
-def saveData(data, fileName="teta.csv"):
+def saveData(data, fileName="tetta.csv"):
     fileData = open(fileName, 'w+')
-    fileData.write(str(data[0]) + "," + str(data[1]) + "," + str(data[2]))
+    resultString = ""
+    comma = ""
+    for d in data:
+        resultString += comma + str(d)
+        comma = ","
+    fileData.write(resultString)
+
+
+def saveToJSONFile(data, fileName):
+    resultStr = json.dumps(data)
+    fileData = open(fileName, 'w+')
+    fileData.write(resultStr)
+
+
+def getFileJSONContents(fileName):
+    content = getFileContents(fileName)
+    result = json.loads(content)
+    return  result
