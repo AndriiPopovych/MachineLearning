@@ -101,18 +101,4 @@ def mse(xArray, yArray, tettaArray):
     return _mse
 
 
-def stopFunction(mse=0):
-    global counter
-    global mseArr
-    counter += 1
-    if mse != 0:
-        lenMse = len(mseArr)
-        mseArr.append(mse)
-        if lenMse > 2:
-            if 0.001 > mseArr[lenMse - 1] - mseArr[lenMse - 2] >= -0.001 and 0.001 > mseArr[lenMse - 2] - mseArr[lenMse - 3] >= -0.001:
-                print "mse = " + str(mseArr[lenMse - 1])
-                return False
-        return True
-    else:
-        if counter < 100000:
-            return True
+
