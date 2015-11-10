@@ -106,7 +106,7 @@ def mse(xArray, yArray, tettaArray):
 def stopFunction():
     global counter
     counter += 1
-    print 100000 - counter
-    if counter < 100000:
+    print 1000000 - counter
+    if counter < 1000000:
         return True
     return False
