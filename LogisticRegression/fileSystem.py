@@ -12,11 +12,12 @@ def getDataFromCSV(fileName="DataSets/multiple_linear_regression.csv"):
         j = 0
         xRow = [1]
         for item in arr:
-            if j != lenArr - 1:
-                xRow.append(int(item))
-            else:
-                y.append(int(item))
-            j += 1
+            if item:
+                if j != lenArr - 1:
+                    xRow.append(float(item))
+                else:
+                    y.append(int(item))
+                j += 1
         x.append(xRow)
         i += 1
     return x, y

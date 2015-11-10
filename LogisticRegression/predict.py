@@ -1,5 +1,7 @@
 from fileSystem import *
 from train import meanNormalization
+import math
+
 
 def predict(_xArray):
     tettaData = getFileContents("tetta.csv")
@@ -17,5 +19,6 @@ def predict(_xArray):
     for t in tetta:
         summ += xArray[i] * float(t)
         i += 1
-    return summ
+    result = 1 / (1 + math.exp(-summ))
+    return result
 

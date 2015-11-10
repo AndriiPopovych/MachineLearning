@@ -1,7 +1,7 @@
 import json
 
 
-def getDataFromCSV(fileName="../../Datasets/multiple_linear_regression.csv"):
+def getDataFromCSV(fileName="DataSets/multiple_linear_regression.csv"):
     fileContent = getFileContents(fileName).split("\n")
     x = []
     y = []

@@ -1,3 +1,0 @@
-House sizes in sqr feet; 
-Number of bedrooms; 
-Price in $ 

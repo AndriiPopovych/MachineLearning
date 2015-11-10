@@ -1,5 +1,6 @@
 from fileSystem import *
 import random
+import math
 
 counter = 0
 mseArr = []
@@ -7,10 +8,12 @@ mseArr = []
 
 def train(alpha=0.0001):
     print "start training"
-    x, y = getDataFromCSV()
+    x, y = getDataFromCSV("DataSets/ex2data1.csv")
     tetta = initializationWeights(len(x[0]))
     x = meanNormalization(x)
-    linearRegression(x, y, tetta, alpha)
+    print x
+    print y
+    logisticRegression(x, y, tetta, alpha)
 
 
 def h(xArray, tettaArray):
@@ -19,7 +22,9 @@ def h(xArray, tettaArray):
     for x in xArray:
         h += float(x) * tettaArray[i]
         i += 1
-    return h
+
+    result = 1 / (1 + math.exp(0 - h))
+    return result
 
 
 def initializationWeights(n):
@@ -65,16 +70,13 @@ def meanNormalization(xArray):
     return xArray
 
 
-def linearRegression(xArray, yArray, tettaArray, alpha):
-    _mse = 0
-    while stopFunction(_mse):
+def logisticRegression(xArray, yArray, tettaArray, alpha):
+    while stopFunction():
         j = 0
         for tetta in tettaArray:
             tettaArray[j] = tetta - gradientDescend(xArray, yArray, tettaArray, alpha, j)
             j += 1
-        _mse = mse(xArray, yArray, tettaArray)
-        print _mse
-        # print tettaArray
+            # print tettaArray
     saveData(tettaArray)
 
 
@@ -101,18 +103,10 @@ def mse(xArray, yArray, tettaArray):
     return _mse
 
 
-def stopFunction(mse=0):
+def stopFunction():
     global counter
-    global mseArr
     counter += 1
-    if mse != 0:
-        lenMse = len(mseArr)
-        mseArr.append(mse)
-        if lenMse > 2:
-            if 0.001 > mseArr[lenMse - 1] - mseArr[lenMse - 2] >= -0.001 and 0.001 > mseArr[lenMse - 2] - mseArr[lenMse - 3] >= -0.001:
-                print "mse = " + str(mseArr[lenMse - 1])
-                return False
+    print 100000 - counter
+    if counter < 100000:
         return True
-    else:
-        if counter < 100000:
-            return True
+    return False
