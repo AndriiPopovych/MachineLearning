@@ -13,7 +13,7 @@ def getDataFromCSV(fileName="DataSets/multiple_linear_regression.csv"):
         xRow = [1]
         for item in arr:
             if item:
-                if j != lenArr - 1:
+                if j != 0: #lenArr - 1:
                     xRow.append(float(item))
                 else:
                     y.append(int(item))

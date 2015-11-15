@@ -8,11 +8,10 @@ mseArr = []
 
 def train(alpha=0.0001):
     print "start training"
-    x, y = getDataFromCSV("DataSets/ex2data1.csv")
+    x, y = getDataFromCSV("DataSets/dataset_1.csv")
+    print y
     tetta = initializationWeights(len(x[0]))
     x = meanNormalization(x)
-    print x
-    print y
     logisticRegression(x, y, tetta, alpha)
 
 
@@ -64,7 +63,7 @@ def meanNormalization(xArray):
         i = 0
         for item in x:
             if sDeviation[i] != 0:
-                xArray[j][i] = (xArray[j][i] - sDeviation[i]) / meanValue[i]
+                xArray[j][i] = (float(xArray[j][i]) - float(sDeviation[i])) / float(meanValue[i])
             i += 1
         j += 1
     return xArray
@@ -106,7 +105,8 @@ def mse(xArray, yArray, tettaArray):
 def stopFunction():
     global counter
     counter += 1
-    print 1000000 - counter
-    if counter < 1000000:
+    stopValue = 10000
+    print stopValue - counter
+    if counter < stopValue:
         return True
     return False

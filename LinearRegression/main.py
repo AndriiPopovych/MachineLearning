@@ -2,8 +2,8 @@ from train import *
 from predict import *
 
 def main():
-    # train(0.01)
-    print predict([1839, 2])
+    train(0.01)
+    # print predict([1839, 2])
 # 1839,2,349900
 # 1000,1,169900
 # 2040,4,314900

@@ -7,7 +7,7 @@ mseArr = []
 
 def train(alpha=0.0001):
     print "start training"
-    x, y = getDataFromCSV()
+    x, y = getDataFromCSV("DataSets/dataset_1.csv")
     tetta = initializationWeights(len(x[0]))
     x = meanNormalization(x)
     linearRegression(x, y, tetta, alpha)
@@ -114,5 +114,5 @@ def stopFunction(mse=0):
                 return False
         return True
     else:
-        if counter < 100000:
+        if counter < 10000:
             return True
