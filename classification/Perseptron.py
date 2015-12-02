@@ -5,7 +5,7 @@ class Perceptron:
     w = []
     X = []
     Y = []
-    eta = 0.1
+    eta = 0.5
 
     def __init__(self):
         self.painter = Painter()
@@ -20,9 +20,9 @@ class Perceptron:
             for item in row:
                 rowArray.append(item)
             if _Y[i] == 1:
-                self.painter.addPoint(row[1], row[2], 'ro')
+                self.painter.addPoint(rowArray[1], rowArray[2], 'ro')
             else:
-                self.painter.addPoint(row[1], row[2], 'x')
+                self.painter.addPoint(rowArray[1], rowArray[2], 'x')
             self.X.append(rowArray)
             self.Y.append(_Y[i])
             i += 1
@@ -64,11 +64,14 @@ class Perceptron:
                 for w in self.w:
                     self.w[j] += self.eta * delta * self.X[i][j]
                     j += 1
-
+                x1 = float(-self.w[0] - self.w[2] * 2) / float(self.w[1])
+                x2 = float(-self.w[0] - self.w[1] * 2) / float(self.w[2])
+                self.painter.paintLine([x1, 2], [2, x2])
             else:
                 goodCounter += 1
                 if float(goodCounter) / float(len(self.X)) == 1:
                     print ("success")
+                    self.painter.show()
                     return
             if counter >= 1000:
                 print ("iteration was ended")
@@ -78,4 +81,3 @@ class Perceptron:
                 i = 0
             counter += 1
             print ("iteration #" + str(counter))
-
