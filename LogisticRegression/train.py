@@ -8,7 +8,8 @@ mseArr = []
 
 def train(alpha=0.0001):
     print "start training"
-    x, y = getDataFromCSV("DataSets/dataset_1.csv")
+    x, y = getDataFromCSV("DataSets/ex2data1.csv")
+    print x
     print y
     tetta = initializationWeights(len(x[0]))
     x = meanNormalization(x)
@@ -22,7 +23,7 @@ def h(xArray, tettaArray):
         h += float(x) * tettaArray[i]
         i += 1
 
-    result = 1 / (1 + math.exp(0 - h))
+    result = 1 / (1 + math.exp(-h))
     return result
 
 
@@ -105,7 +106,7 @@ def mse(xArray, yArray, tettaArray):
 def stopFunction():
     global counter
     counter += 1
-    stopValue = 10000
+    stopValue = 100000
     print stopValue - counter
     if counter < stopValue:
         return True

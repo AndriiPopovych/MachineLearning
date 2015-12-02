@@ -13,6 +13,7 @@ def calculate(xArray):
         i += 1
     # print summ
     result = 1.0 / (1.0 + math.exp(-summ))
+    # print resu
     return result
 
 
@@ -22,6 +23,7 @@ def predict():
     i = 0
     xArray, yArray = getDataFromCSV("predict.csv")
     j = 0
+    # mean normalization
     for t in tetta:
         i = 0
         for x in xArray:
@@ -32,10 +34,13 @@ def predict():
     trueValue = 0
     falseValue = 0
     visualize()
+    countOne = 0
     print xArray
     for x in xArray:
         predictResult1 = calculate(x)
         predictResult = round(predictResult1)
+        if predictResult == 1:
+            countOne += 1
         if predictResult == yArray[i]:
             # plot([x[1]], [predictResult1], 'x')
             plot([i], [predictResult1], 'x')
@@ -46,6 +51,7 @@ def predict():
             falseValue += 1
         i += 1
     print "True/False = " + str(trueValue) + "/" + str(falseValue)
+    print "count one = " + str(countOne)
     show()
 
 
