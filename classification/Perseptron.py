@@ -5,7 +5,7 @@ class Perceptron:
     w = []
     X = []
     Y = []
-    eta = 0.5
+    eta = 0.7
 
     def __init__(self):
         self.painter = Painter()
