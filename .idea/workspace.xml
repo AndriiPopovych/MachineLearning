@@ -3,8 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="8240c799-a453-4da6-b89b-c59bd00a17be" name="Default" comment="">
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classification/Painter.py" afterPath="$PROJECT_DIR$/classification/Painter.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classification/Perseptron.py" afterPath="$PROJECT_DIR$/classification/Perseptron.py" />
+>>>>>>> parent of b5078d1... Start create Artificual Neuron Network. Create Entity Neuron (one node in ANN) and ANN.
 =======
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classification/Painter.py" afterPath="$PROJECT_DIR$/classification/Painter.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classification/Perseptron.py" afterPath="$PROJECT_DIR$/classification/Perseptron.py" />
@@ -47,6 +52,7 @@
   </component>
   <component name="FileEditorManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Perseptron.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classification/Perseptron.py">
@@ -59,6 +65,12 @@
       <file leaf-file-name="Perseptron.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/classification/Perseptron.py">
           <provider selected="true" editor-type-id="text-editor">
+=======
+    <leaf>
+      <file leaf-file-name="Perseptron.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/classification/Perseptron.py">
+          <provider selected="true" editor-type-id="text-editor">
+>>>>>>> parent of b5078d1... Start create Artificual Neuron Network. Create Entity Neuron (one node in ANN) and ANN.
             <state vertical-scroll-proportion="-0.11235955">
               <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
               <folding>
@@ -72,11 +84,19 @@
         </entry>
       </file>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <file leaf-file-name="ANN.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NeronNetwork/ANN.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="49" column="44" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
+=======
+      <file leaf-file-name="Painter.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classification/Painter.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+>>>>>>> parent of b5078d1... Start create Artificual Neuron Network. Create Entity Neuron (one node in ANN) and ANN.
 =======
       <file leaf-file-name="Painter.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classification/Painter.py">
@@ -90,23 +110,30 @@
         </entry>
       </file>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NeronNetwork/main.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
 =======
+=======
+>>>>>>> parent of b5078d1... Start create Artificual Neuron Network. Create Entity Neuron (one node in ANN) and ANN.
       <file leaf-file-name="index.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classification/index.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+<<<<<<< HEAD
+>>>>>>> parent of b5078d1... Start create Artificual Neuron Network. Create Entity Neuron (one node in ANN) and ANN.
+=======
 >>>>>>> parent of b5078d1... Start create Artificual Neuron Network. Create Entity Neuron (one node in ANN) and ANN.
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
 <<<<<<< HEAD
       <file leaf-file-name="1.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/1.txt">
@@ -129,6 +156,12 @@
         <entry file="file://$PROJECT_DIR$/LogisticRegression/predict.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
+=======
+      <file leaf-file-name="predict.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LogisticRegression/predict.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+>>>>>>> parent of b5078d1... Start create Artificual Neuron Network. Create Entity Neuron (one node in ANN) and ANN.
               <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
@@ -183,6 +216,7 @@
         <option value="$PROJECT_DIR$/classification/Painter.py" />
         <option value="$PROJECT_DIR$/classification/Perseptron.py" />
 <<<<<<< HEAD
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/Neuron Network/Perceptron.py" />
         <option value="$PROJECT_DIR$/Neuron Network/Node.py" />
         <option value="$PROJECT_DIR$/Neuron Network/main.py" />
@@ -195,6 +229,8 @@
         <option value="$PROJECT_DIR$/NeronNetwork/main.py" />
         <option value="$PROJECT_DIR$/1.txt" />
         <option value="$PROJECT_DIR$/.gitignore" />
+=======
+>>>>>>> parent of b5078d1... Start create Artificual Neuron Network. Create Entity Neuron (one node in ANN) and ANN.
 =======
 >>>>>>> parent of b5078d1... Start create Artificual Neuron Network. Create Entity Neuron (one node in ANN) and ANN.
       </list>
@@ -238,7 +274,10 @@
     </navigator>
     <panes>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <pane id="Scope" />
+=======
+>>>>>>> parent of b5078d1... Start create Artificual Neuron Network. Create Entity Neuron (one node in ANN) and ANN.
 =======
 >>>>>>> parent of b5078d1... Start create Artificual Neuron Network. Create Entity Neuron (one node in ANN) and ANN.
       <pane id="Scratches" />
@@ -288,6 +327,9 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Andrey" />
+<<<<<<< HEAD
+>>>>>>> parent of b5078d1... Start create Artificual Neuron Network. Create Entity Neuron (one node in ANN) and ANN.
+=======
 >>>>>>> parent of b5078d1... Start create Artificual Neuron Network. Create Entity Neuron (one node in ANN) and ANN.
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -295,10 +337,18 @@
         </subPane>
       </pane>
 <<<<<<< HEAD
+<<<<<<< HEAD
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$USER_HOME$/Current_course/oop_example" />
+=======
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+>>>>>>> parent of b5078d1... Start create Artificual Neuron Network. Create Entity Neuron (one node in ANN) and ANN.
 =======
       <pane id="Scope" />
     </panes>
@@ -325,8 +375,13 @@
     </key>
   </component>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <component name="RunManager">
     <configuration default="false" name="Painter" type="PythonConfigurationType" factoryName="Python" temporary="true">
+=======
+  <component name="RunManager" selected="Python.index">
+    <configuration default="false" name="main (4)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+>>>>>>> parent of b5078d1... Start create Artificual Neuron Network. Create Entity Neuron (one node in ANN) and ANN.
 =======
   <component name="RunManager" selected="Python.index">
     <configuration default="false" name="main (4)" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -344,7 +399,11 @@
       <module name="Andrey" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/classification/Painter.py" />
+=======
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LogisticRegression/main.py" />
+>>>>>>> parent of b5078d1... Start create Artificual Neuron Network. Create Entity Neuron (one node in ANN) and ANN.
 =======
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LogisticRegression/main.py" />
 >>>>>>> parent of b5078d1... Start create Artificual Neuron Network. Create Entity Neuron (one node in ANN) and ANN.
@@ -353,7 +412,11 @@
       <method />
     </configuration>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <configuration default="false" name="Perceptron" type="PythonConfigurationType" factoryName="Python" temporary="true">
+=======
+    <configuration default="false" name="train" type="PythonConfigurationType" factoryName="Python" temporary="true">
+>>>>>>> parent of b5078d1... Start create Artificual Neuron Network. Create Entity Neuron (one node in ANN) and ANN.
 =======
     <configuration default="false" name="train" type="PythonConfigurationType" factoryName="Python" temporary="true">
 >>>>>>> parent of b5078d1... Start create Artificual Neuron Network. Create Entity Neuron (one node in ANN) and ANN.
@@ -364,7 +427,11 @@
       </envs>
       <option name="SDK_HOME" value="" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Neuron Network" />
+=======
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LogisticRegression" />
+>>>>>>> parent of b5078d1... Start create Artificual Neuron Network. Create Entity Neuron (one node in ANN) and ANN.
 =======
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LogisticRegression" />
 >>>>>>> parent of b5078d1... Start create Artificual Neuron Network. Create Entity Neuron (one node in ANN) and ANN.
@@ -374,7 +441,11 @@
       <module name="Andrey" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <option name="SCRIPT_NAME" value="D:\Dropbox\Курс по Machine Learning\Home_tasks\Andrey\Neuron Network\Node.py" />
+=======
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LogisticRegression/train.py" />
+>>>>>>> parent of b5078d1... Start create Artificual Neuron Network. Create Entity Neuron (one node in ANN) and ANN.
 =======
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LogisticRegression/train.py" />
 >>>>>>> parent of b5078d1... Start create Artificual Neuron Network. Create Entity Neuron (one node in ANN) and ANN.
@@ -401,7 +472,11 @@
       <method />
     </configuration>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <configuration default="false" name="index" type="PythonConfigurationType" factoryName="Python" temporary="true">
+=======
+    <configuration default="false" name="Painter" type="PythonConfigurationType" factoryName="Python" temporary="true">
+>>>>>>> parent of b5078d1... Start create Artificual Neuron Network. Create Entity Neuron (one node in ANN) and ANN.
 =======
     <configuration default="false" name="Painter" type="PythonConfigurationType" factoryName="Python" temporary="true">
 >>>>>>> parent of b5078d1... Start create Artificual Neuron Network. Create Entity Neuron (one node in ANN) and ANN.
@@ -418,7 +493,11 @@
       <module name="Andrey" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/classification/index.py" />
+=======
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/classification/Painter.py" />
+>>>>>>> parent of b5078d1... Start create Artificual Neuron Network. Create Entity Neuron (one node in ANN) and ANN.
 =======
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/classification/Painter.py" />
 >>>>>>> parent of b5078d1... Start create Artificual Neuron Network. Create Entity Neuron (one node in ANN) and ANN.
@@ -1054,8 +1133,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
 <<<<<<< HEAD
+<<<<<<< HEAD
           <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
 =======
+=======
+>>>>>>> parent of b5078d1... Start create Artificual Neuron Network. Create Entity Neuron (one node in ANN) and ANN.
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding />
 >>>>>>> parent of b5078d1... Start create Artificual Neuron Network. Create Entity Neuron (one node in ANN) and ANN.
@@ -1066,8 +1148,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
 <<<<<<< HEAD
+<<<<<<< HEAD
           <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
 =======
+=======
+>>>>>>> parent of b5078d1... Start create Artificual Neuron Network. Create Entity Neuron (one node in ANN) and ANN.
           <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
           <folding />
 >>>>>>> parent of b5078d1... Start create Artificual Neuron Network. Create Entity Neuron (one node in ANN) and ANN.
@@ -1076,6 +1161,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/classification/Perseptron.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
@@ -1129,6 +1215,18 @@
         </state>
       </provider>
     </entry>
+=======
+        <state vertical-scroll-proportion="-0.11235955">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="e#669#756#0" expanded="false" />
+            <element signature="e#794#921#0" expanded="false" />
+            <element signature="e#968#1038#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+>>>>>>> parent of b5078d1... Start create Artificual Neuron Network. Create Entity Neuron (one node in ANN) and ANN.
 =======
         <state vertical-scroll-proportion="-0.11235955">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
