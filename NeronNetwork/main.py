@@ -21,5 +21,3 @@ ann.forwardPropogation()
 
 # ann.showAllNeurons()
 # ann.forwardPropogation()
-# sdafdsafasdfasdfdasf adsf asdf sadf sdaf
-# test test
