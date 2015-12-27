@@ -198,7 +198,7 @@ angular.module('tadApp.service.calculation', [])
                     });
                     //console.log(data);
                     var myFares = [];
-                    /*if (type == "2") { // перевіряємо обмеження по вибору ризиків
+                    /*if (type == "2") { // ГЇГҐГ°ГҐГўВіГ°ГїВєГ¬Г® Г®ГЎГ¬ГҐГ¦ГҐГ­Г­Гї ГЇГ® ГўГЁГЎГ®Г°Гі Г°ГЁГ§ГЁГЄВіГў
                         if (faresArray.indexOf("ci") >= 0 ||
                             faresArray.indexOf("inv_1") >= 0 ||
                             faresArray.indexOf("inv_1_2") >= 0) {
@@ -209,7 +209,7 @@ angular.module('tadApp.service.calculation', [])
                     faresArray.forEach(function(item) {
                         myFares[item] = fares[item];
                     });*/
-                    /*if (type == "2") { // перевіряємо обмеження по вибору ризиків
+                    /*if (type == "2") { // ГЇГҐГ°ГҐГўВіГ°ГїВєГ¬Г® Г®ГЎГ¬ГҐГ¦ГҐГ­Г­Гї ГЇГ® ГўГЁГЎГ®Г°Гі Г°ГЁГ§ГЁГЄВіГў
                         if (faresArray['ci'] ||
                             faresArray["inv_1"] ||
                             faresArray["inv_1_2"]) {
@@ -221,8 +221,8 @@ angular.module('tadApp.service.calculation', [])
                     faresArray.forEach(function(item) {
                         myFares[item] = fares[item];
                     });
-                    // якщо страхова особа не дорівнює ззастрахованому,
-                    // то змінюється тариф по wop (в програмі ТАС Максимум)
+                    // ГїГЄГ№Г® Г±ГІГ°Г ГµГ®ГўГ  Г®Г±Г®ГЎГ  Г­ГҐ Г¤Г®Г°ВіГўГ­ГѕВє Г§Г§Г Г±ГІГ°Г ГµГ®ГўГ Г­Г®Г¬Гі,
+                    // ГІГ® Г§Г¬ВіГ­ГѕВєГІГјГ±Гї ГІГ Г°ГЁГґ ГЇГ® wop (Гў ГЇГ°Г®ГЈГ°Г Г¬Ві Г’ГЂГ‘ ГЊГ ГЄГ±ГЁГ¬ГіГ¬)
                     if (program == "maximum" && sz == false) {
                         if (ageS <= 40) {
                             myFares["wop"] = 0.035522;
@@ -329,7 +329,7 @@ angular.module('tadApp.service.calculation', [])
             $file.get('db/linkTypes')
                .then(function (links) {
                     for (var k = 0; k < links.length; k++) {
-                        if (links[k].nameLinkType == "Я") {
+                        if (links[k].nameLinkType == "Гџ") {
                             myId = links[k].idLinkType;
                         }
                         else {
@@ -377,7 +377,7 @@ angular.module('tadApp.service.calculation', [])
                                             }
                                         });
                                         personList.push(p);
-                                        if (data[i].chose[j].name != "Я") {
+                                        if (data[i].chose[j].name != "Гџ") {
                                             linkLists.push({
                                                 person:p,
                                                 parentPerson:myPerson,
@@ -670,3 +670,4 @@ angular.module('tadApp.service.calculation', [])
         }
 
     });
+    // putin hamlo la-la-la
